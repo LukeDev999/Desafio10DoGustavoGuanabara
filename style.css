@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "idroid";
+    src: url("fontes/idroid.otf") format("opentype");
+    font-weight: normal;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+p {
+    text-indent: 8px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+body {
+    font-family: 'inter', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0px;
+    background-color: #3e0c5580; /* Altere a cor para um branco neutro ou qualquer cor que preferir */
+    }
+#titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Orbitron', sans-serif;
+        color: black; /* 3e0c55 roxo interessante */
+        border-bottom: 4px solid #3e0c55;
+        padding-bottom: 4px ;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 14px;
+        text-align: center;
+        background-color: rgb(63, 156, 113);
+        border-radius: 8px;
+    }
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+#menu ul li:hover{
+    color: #2bff00;
+    border-radius: 25px;
+    transition: 0.8s;
+}
+a {
+    color: rgb(0, 0, 0); /* Cor padrão do link */
+    font-weight: bold;
+    transition: color 0.8s, border-radius 0.8s; /* Transição para cor e borda */
+}
+a:visited::after {
+    color: white; /* Cor padrão do link */
+}
+a:visited::before {
+    color: white; /* Cor padrão do link */
+}
+a:hover {
+    color: #2bff00;
+    border-radius: 25px;
+    transition: 0.8s;
+}
+
+section#conteudo1 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    margin: 0px;
+}
+section#conteudo1 h2 {
+    font-family: "idroid", sans-serif;
+    color: #ffffff; /* 3e0c55 roxo interessante */
+    font-size: 25px;
+    text-align: center;
+    background-color: #3e0c55;
+    border-radius: 12px;
+    font-weight: bold;
+    margin: 1px;
+}
+h2.titulo2 {
+    background-color: #3e0c55;
+}
+aside#final {
+    color: black;
+    text-align: center;
+    padding: 0px;
+    font-size: 17px;
+}
+
+h3#titulo3 {
+    font-family: "idroid", sans-serif;
+    color: #ffffff; /* 3e0c55 roxo interessante */
+    font-size: 25px;
+    text-align: center;
+    background-color: #3e0c55;
+    border-radius: 12px;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 0px;
+}
+#lista {
+    background-color: #22532acb;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 20px;
+}
+span {
+    font-weight: bold;
+    color: #3e0c55;
+    text-decoration: none;
+}
+div#lista ul {
+    columns: 2;
+    list-style: none;
+    padding-left: 0px;
+    text-align: left;
+}
+div#lista li::before {
+    content: "✔ ";
+    color: #000;
+    margin-right: 5px;
+}
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13441b;
+    border-radius: 1px;
+}
+div#caixadoaside{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: left;
+    padding: 0px;
+}
+footer {
+    background-color: #3e0c55;
+    margin-top: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    header#container {
+        font-size: 15px;
+    }
+    section#conteudo1 h2 {
+        font-size: 20px;
+    }
+    h3#titulo3 {
+        font-size: 18px;
+    }
+    nav#menu ul li {
+        margin-bottom: 7px; /* Adiciona um espaço entre os itens do menu */
+    }
+}
+
+#imagembugdroid {
+    display: flex;
+    justify-content: center;
+
+  }
+  .IrinaBlok-mobile {
+    display: block;
+    justify-content: center;
+  }
+  
+  .IrinaBlok-desktop {
+    display: none;
+  }
+
+  #irina {
+    display: flex;
+    justify-content: center;
+  }
+
+ #dan {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    .IrinaBlok-mobile {
+      display: none;
+    }
+  
+    .IrinaBlok-desktop {
+      display: block;
+    }
+  }
+  .Dandroids-mobile {
+    display: block;
+  }
+  
+  .Dandroids-desktop {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .Dandroids-mobile {
+      display: none;
+    }
+  
+    .Dandroids-desktop {
+      display: block;
+    }
+  }
+  div#main {
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+
+  }
+  
